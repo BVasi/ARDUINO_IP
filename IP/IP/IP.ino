@@ -42,7 +42,7 @@ void handleChangeSensorSettings()
   httpWrapper.sendResponse(200, "");
 }
 
-SensorsData getSensorsData() //de adaugat partea de alarme
+SensorsData getSensorsData()
 {
   SensorsData sensorsData = SensorsData();
   int rawValue = analogRead(SensorPin::LIGHT_SENSOR);
